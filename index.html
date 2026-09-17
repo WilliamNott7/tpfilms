@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TP Films é videomaker do Huambo, referência nacional no audiovisual angolano. Videoclipes, publicidade e cinema com rigor técnico e identidade visual marcante.">
+
+
+
+    <meta name="keywords" content="TP, Angola, Audiovisual, Videomaker, Instagram, TikTok, redes sociais, visibilidade online, promoção digital, marketing pessoal, link único, apresentação online, criador de conteúdos Angola, OMA, página pessoal online, tráfego para redes sociais, Influenciador, Facebook, PortfyAngola, Portfólio, TP FILMS">
+    <meta name="author" content="TP FILMS">
+    <meta name="robots" content="index, follow">
+
+
+      <!-- Open Graph para redes sociais -->
+    <meta property="og:title" content="TP FILMS">
+    <meta property="og:description" content="Transformamos visões em obras de alto impacto. Videoclipes e publicidade com identidade visual marcante.">
+    <meta property="og:image" content="https://tpfilms.vercel.app/perfil.png"> <!-- imagem de destaque -->
+    <meta property="og:url" content="https://https://tpfilms.vercel.app/perfil.png">
+    <meta property="og:type" content="website">
+
+
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="TP FILMS" />
+    <meta name="twitter:description" content="Transformamos visões em obras de alto impacto. Videoclipes e publicidade com identidade visual marcante." />
+    <meta name="twitter:image" content="https://tpfilms.vercel.app/perfil.png" />
+    
+    
+    
+
+
+     
+
+        <!-- Font -->
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://tpfilms.vercel.app/perfil.png" />
+    <link rel="apple-touch-icon" href="https://tpfilms.vercel.app/perfil.png" />
+
+
+
+
+
+<style>
+  :root{
+    /* ===== TOKENS — troca aqui para reskin de outro cliente ===== */
+    --bg:        #0a0a0b;
+    --bg-soft:   #121211;
+    --ink:       #f3eee3;
+    --ink-dim:   #b8b2a3;
+    --muted:     #8c8578;
+    --gold:      #c6a15b;
+    --gold-hi:   #e8cd8a;
+    --line:      #26241f;
+    --line-soft: #1a1917;
+
+    --font-display: 'Cormorant Garamond', serif;
+    --font-body:    'Manrope', sans-serif;
+
+    --name:  "TP FILMS";
+    --role:  "Videomaker e Diretor Audiovisual ";
+    --badge: "Videomaker";
+
+    --photo-hero:  url('fundo.jpg');
+    --photo-sobre: url('sobre.jpg');
+
+    --wa-parceria: "https://wa.me/244927311389?text=Olá,%20gostaria%20de%20falar%20com%20o%20TP%20FILMS.";
+
+
+    --wa-portfolio: "https://wa.me/244927311389?text=Olá,%20gostaria%20de%20falar%20com%20o%20TP%20FILMS.";
+  }
+
+
+
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--font-body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{display:block;max-width:100%;}
+
+  .eyebrow{
+    font-family:var(--font-body);
+    font-size:.70rem;
+    letter-spacing:.28em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:600;
+  }
+  .rule{
+    width:52px;height:1px;
+    background:linear-gradient(90deg,var(--gold),transparent);
+    margin:18px 0;
+  }
+  .rule.center{margin:18px auto;background:var(--gold);width:64px;}
+
+  /* ===== reveal on scroll ===== */
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none;}
+    *{animation-duration:.001ms !important; animation-iteration-count:1 !important;}
+  }
+
+  /* ===== TOP NAV ===== */
+  header.nav{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:26px 6vw;
+    mix-blend-mode:difference;
+  }
+  .nav-mark{
+    font-family:var(--font-display);
+    font-style:italic;font-size:1.3rem;color:var(--ink);letter-spacing:.02em;
+  }
+  .nav-links{display:flex;gap:28px;}
+  .nav-links a{
+    font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;
+    color:var(--ink);opacity:.75;transition:opacity .3s ease;
+  }
+  .nav-links a:hover{opacity:1;}
+
+  /* ===== HERO ===== */
+  .hero{
+    position:relative;min-height:100svh;
+    display:flex;flex-direction:column;justify-content:flex-end;
+    padding:0 6vw 72px;
+    isolation:isolate;
+  }
+  .hero-bg{
+    position:absolute;inset:0;z-index:-2;
+    background:var(--photo-hero) center 25%/cover no-repeat;
+    filter:grayscale(35%) contrast(1.05);
+  }
+  .hero-bg::after{
+    content:"";position:absolute;inset:0;
+    background:
+      linear-gradient(180deg, rgba(10,10,11,.15) 0%, rgba(10,10,11,.55) 55%, rgba(10,10,11,.96) 100%);
+  }
+
+  .hero-top{
+    position:absolute;top:110px;left:6vw;
+    display:flex;align-items:center;gap:16px;
+  }
+  .ring-wrap{
+    position:relative;width:96px;height:96px;flex:none;
+  }
+  .ring-wrap svg{
+    position:absolute;inset:0;width:100%;height:100%;
+    animation:spin 22s linear infinite;
+  }
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .ring-photo{
+    position:absolute;inset:14px;border-radius:50%;overflow:hidden;
+    border:1px solid var(--gold);
+  }
+  .ring-photo img{width:100%;height:100%;object-fit:cover;}
+  .ring-badge{
+    font-family:var(--font-body);font-size:.64rem;letter-spacing:.15em;
+    text-transform:uppercase;color:var(--gold-hi);
+  }
+  .ring-badge span{display:block;color:var(--muted);font-size:.62rem;letter-spacing:.1em;margin-top:2px;}
+
+  .hero-name{
+    font-family:var(--font-display);
+    font-weight:500;
+    font-size:clamp(3.2rem, 9vw, 7.5rem);
+    line-height:.95;
+    letter-spacing:-.01em;
+    color:var(--ink);
+  }
+  .hero-name em{color:var(--gold-hi);font-style:italic;}
+  .hero-role{
+    font-family:var(--font-body);
+    font-size:.95rem;letter-spacing:.06em;color:var(--ink-dim);
+    margin-top:14px;max-width:520px;
+  }
+
+  .social-row{
+    display:flex;gap:34px;margin-top:38px;flex-wrap:wrap;
+  }
+  .social-row a{
+    display:flex;align-items:center;gap:9px;
+    font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--ink-dim);position:relative;padding-bottom:4px;
+    transition:color .3s ease;
+  }
+  .social-row a::after{
+    content:"";position:absolute;left:0;bottom:0;height:1px;width:0;
+    background:var(--gold);transition:width .35s ease;
+  }
+  .social-row a:hover{color:var(--gold-hi);}
+  .social-row a:hover::after{width:100%;}
+  .social-row svg{width:15px;height:15px;stroke:currentColor;fill:none;}
+
+  .scroll-cue{
+    position:absolute;bottom:28px;right:6vw;
+    writing-mode:vertical-rl;
+    font-size:.64rem;letter-spacing:.25em;text-transform:uppercase;
+    color:var(--muted);display:flex;align-items:center;gap:10px;
+  }
+  .scroll-cue::after{content:"";width:1px;height:34px;background:var(--muted);}
+
+  /* ===== SECTION shell ===== */
+  section{padding:130px 6vw;position:relative;}
+  .section-head{max-width:640px;margin-bottom:64px;}
+  .section-title{
+    font-family:var(--font-display);font-weight:500;
+    font-size:clamp(2rem,4vw,3.1rem);letter-spacing:-.01em;
+    color:var(--ink);
+  }
+
+  /* ===== SOBRE ===== */
+  .sobre{
+    display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:center;
+    border-top:1px solid var(--line);
+  }
+  .sobre-photo{
+    position:relative;
+    aspect-ratio:4/5;
+    background:var(--photo-sobre) center/cover no-repeat;
+    filter:grayscale(20%);
+  }
+  .sobre-photo::before{
+    content:"";position:absolute;inset:18px;border:1px solid var(--gold);
+    pointer-events:none;
+  }
+  .sobre-text p{
+    color:var(--ink-dim);font-size:1.02rem;max-width:46ch;margin-bottom:28px;
+  }
+  .tags{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:36px;}
+  .tag{
+    border:1px solid var(--line);padding:10px 20px;
+    font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--ink-dim);
+  }
+  .btn-gold{
+    display:inline-flex;align-items:center;gap:10px;
+    border:1px solid var(--gold);color:var(--gold-hi);
+    padding:15px 32px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;
+    transition:background .35s ease,color .35s ease;
+  }
+  .btn-gold:hover{background:var(--gold);color:var(--bg);}
+
+  /* ===== DESTAQUES ===== */
+  .destaques{border-top:1px solid var(--line);}
+  .dest-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);
+  }
+  .dest-card{
+    background:var(--bg);padding:44px 34px;min-height:280px;
+    display:flex;flex-direction:column;
+  }
+  .diamond{
+    width:9px;height:9px;background:var(--gold);
+    transform:rotate(45deg);margin-bottom:26px;
+  }
+  .dest-card h3{
+    font-family:var(--font-display);font-weight:500;font-size:1.5rem;
+    margin-bottom:14px;color:var(--ink);
+  }
+  .dest-card p{color:var(--muted);font-size:.92rem;}
+
+
+
+
+
+
+
+
+
+
+
+/* Gallery Section */
+.gallery {
+  padding: 100px 0;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+   
+.gallery-item {
+position: relative;
+border-radius: 15px;
+overflow: hidden;
+height: 450px;
+cursor: pointer;
+}
+
+.gallery-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: all 0.5s ease;
+}
+
+.gallery-item:hover img {
+transform: scale(1.1);
+}
+
+.gallery-item:after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: var(--gradient);
+opacity: 0;
+transition: all 0.3s ease;
+mix-blend-mode: overlay;
+}
+
+.gallery-item:hover:after {
+opacity: 0.3;
+}
+
+/* Animations */
+@keyframes float {
+0%, 100% {
+    transform: translateY(0) translateX(0);
+}
+50% {
+    transform: translateY(-20px) translateX(20px);
+}
+}
+
+@keyframes pulse {
+0%, 100% {
+    box-shadow: 0 0 30px rgba(110, 68, 255, 0.5);
+}
+50% {
+    box-shadow: 0 0 50px rgba(0, 229, 255, 0.7);
+}
+}
+
+
+
+
+
+  .creator-gallery {
+        padding: 3rem 1.5rem;
+        font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+    }
+    .creator-gallery .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .creator-gallery .gallery-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #3b82f6;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    .creator-gallery .gallery-sub {
+        color: #a0a0a0;
+        text-align: center;
+        margin-bottom: 2.5rem;
+        font-size: 1rem;
+    }
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    .gallery-grid .photo {
+        border-radius: 16px;
+        overflow: hidden;
+        aspect-ratio: 1 / 1;
+        background: #1a1a1a;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;
+        position: relative;
+    }
+    .gallery-grid .photo:hover {
+        transform: scale(1.03);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+    }
+    .gallery-grid .photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.5s ease;
+    }
+    .gallery-grid .photo:hover img {
+        transform: scale(1.05);
+    }
+    /* Overlay opcional (mostra um ícone ao passar o mouse) */
+    .gallery-grid .photo .overlay {
+        position: absolute;
+        inset: 0;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+    .gallery-grid .photo:hover .overlay {
+        opacity: 1;
+    }
+    .gallery-grid .photo .overlay i {
+        color: #fff;
+        font-size: 2rem;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+        .gallery-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0.8rem;
+        }
+        .creator-gallery .gallery-title {
+            font-size: 1.6rem;
+        }
+    }
+    @media (max-width: 480px) {
+        .gallery-grid {
+            gap: 0.5rem;
+        }
+        .creator-gallery {
+            padding: 2rem 0.8rem;
+        }
+    }
+
+
+
+
+
+
+
+        
+
+
+  /* ===== CTA / FOOTER ===== */
+  .cta-band{
+    border-top:1px solid var(--line);text-align:center;padding:130px 6vw;
+  }
+  .cta-band .section-title{margin:0 auto 40px;}
+  
+
+
+
+
+
+  
+  footer{
+    border-top:1px solid var(--line);
+    padding:44px 6vw;
+    display:flex;flex-wrap:wrap;gap:20px;
+    justify-content:space-between;align-items:center;
+    font-size:.72rem;color:var(--muted);letter-spacing:.04em;
+  }
+  footer .foot-links{display:flex;gap:26px;}
+  footer .foot-links a{text-transform:uppercase;letter-spacing:.14em;color:var(--ink-dim);transition:color .3s;}
+  footer .foot-links a:hover{color:var(--gold-hi);}
+
+  @media (max-width:860px){
+    .nav-links{display:none;}
+    .sobre{grid-template-columns:1fr;gap:44px;}
+    .dest-grid{grid-template-columns:1fr;}
+    .hero-top{top:96px;}
+    section{padding:90px 6vw;}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <a href="#inicio" class="nav-mark">TP FILMS</a>
+  <nav class="nav-links">
+    <a href="#sobre">Sobre</a>
+    <a href="javascript:void(0)" onclick="window.open(JSON.parse(getComputedStyle(document.documentElement).getPropertyValue('--wa-parceria')))">Contacto</a>
+  </nav>
+</header>
+
+
+
+
+
+
+
+
+<section id="inicio" class="hero">
+  <div class="hero-bg"></div>
+
+  <div class="hero-top">
+    <div class="ring-wrap">
+      <svg viewBox="0 0 100 100">
+        <defs>
+          <path id="ringpath" d="M50,50 m-40,0 a40,40 0 1,1 80,0 a40,40 0 1,1 -80,0" fill="none"/>
+        </defs>
+        <text font-size="6.4" letter-spacing="2" fill="#c6a15b" font-family="Manrope">
+          <textPath href="#ringpath" startOffset="0%">TP FILMS • TP FILMS • TP FILMS •</textPath>
+        </text>
+      </svg>
+      <div class="ring-photo">
+        <img src="perfil.png" loading="lazy" decoding="async" alt="TP FILMS">
+      </div>
+    </div>
+   
+  </div>
+  
+  <h1 class="hero-name">TP <br><em>FILMS</em></h1>
+  <p class="hero-role">Videomaker — Diretor Audiovisual.</p>
+
+  <div class="social-row">
+
+    <a href="https://www.instagram.com/tprecordsfilms?stkn=MThtc2tqdXUzOTFrNw==" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg> 
+      Instagram
+    </a>
+
+
+    <a href="https://www.facebook.com/share/1LFELKpLKf/?mibextid=wwXIfr" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M15 3h-2a5 5 0 0 0-5 5v2H6v4h2v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3z"/></svg>
+      Facebook
+    </a>
+  </div>
+
+  <div class="scroll-cue">Deslizar</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="sobre" class="sobre reveal">
+  <div class="sobre-photo"></div>
+  <div class="sobre-text">
+    <div class="eyebrow">Sobre mim</div>
+    <div class="rule"></div>
+    <p>TP FILMS — é hoje um dos nomes mais respeitados do audiovisual angolano. Com uma trajetória iniciada em 2010 e consolidada profissionalmente em 2020, destaca-se no mercado pelo seu estilo criativo, identidade visual marcante e rigor técnico na construção de obras de alto impacto. Conhecido pela versatilidade e paixão pela arte, TP Films tornou-se uma referência nacional ao transformar visões em realidade e impulsionar a indústria cultural a partir do Planalto Central. A sua reputação atrai grandes artistas de Luanda e de todo o país, culminando no reconhecimento internacional ao ser selecionado para acompanhar a Seleção Campeã do Mundo (Argentina Seleção de Messi [2025])— um marco que projeta a nova geração do audiovisual angolano para o cenário global.</p>
+    <p>Principais Trabalhos e Colaborações: Artistas & Referências Musicais: Cef Tanzy, Masta (Força Suprema), Cláudio Fênix, Paulelson, Preto Show, Filho do Zua, Jéssica Pitbull, Button Rose, Delero King, Os Gabeladas, Justino Handanga, Bessa Teixeira, Florêncio Handanga, MC Cabinda, Lito Dias, Os HDA, Edna Mateia, Da Beleza, Pipiloy dos Caly, Diamond Edge e Alexa Tomás. Projetos Institucionais: Polícia Nacional de Angola, Instituto Superior Politécnico da Caála.</p>
+
+    <a class="btn-gold" href="javascript:void(0)" onclick="window.open(JSON.parse(getComputedStyle(document.documentElement).getPropertyValue('--wa-parceria')))">Entrar em  Contacto →</a>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ===== GALLERY ===== -->
+
+
+<section class="creator-gallery reveal">
+    <div class="container">
+        <h2 class="section-title">Galeria</h2>
+        <p class="gallery-sub">Registros de bastidores, ensaios e produções</p>
+
+        <div class="gallery-grid">
+            <!-- Substitua os src pelas suas imagens -->
+            <div class="photo">
+                <img src="img_1.jpg" loading="lazy" decoding="async" alt="Foto 1">
+                <div class="overlay"><i class="fas fa-heart"></i></div>
+            </div>
+            <div class="photo">
+                <img src="img_2.jpg"  loading="lazy" decoding="async" alt="Foto 2">
+                <div class="overlay"><i class="fas fa-heart"></i></div>
+            </div>
+            <div class="photo">
+                <img src="img_3.jpg" loading="lazy" decoding="async" alt="Foto 3">
+                <div class="overlay"><i class="fas fa-heart"></i></div>
+            </div>
+            <div class="photo">
+                <img src="img_4.jpg" loading="lazy" decoding="async" alt="Foto 4">
+                <div class="overlay"><i class="fas fa-heart"></i></div>
+            </div>
+           
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="cta-band reveal">
+  <div class="eyebrow" style="text-align:center">Vamos Construir Algo Excepcional Juntos?</div>
+  <div class="rule center"></div>
+  <h2 class="section-title">Transformamos tua visão em obra</h2>
+  <br>
+  <a class="btn-gold" href="javascript:void(0)" onclick="window.open(JSON.parse(getComputedStyle(document.documentElement).getPropertyValue('--wa-portfolio')))">Fala Comigo →</a>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer>
+  <div>© 2026 TP FILMS — Todos os direitos reservados.</div>
+  <div class="foot-links">
+    <a href="#inicio">Home</a>
+    
+    <a href="https://www.facebook.com/share/1LFELKpLKf/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a>
+    
+    <a href="https://www.instagram.com/tprecordsfilms?stkn=MThtc2tqdXUzOTFrNw==" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+
+<script>
+  // scroll reveal
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:.15});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  
+  
+  
+  
+
+
+
+
+            // Gallery items
+            
+        function renderGallery() {
+        const grid = document.getElementById('galleryGrid');
+        const images = CONFIG.galleryImages;
+        let html = '';
+        images.forEach((src, i) => {
+            const label = `Fotografia ${i+1} do Gourmet & Co.`;
+            html += `
+                <div class="gallery-item" data-src="${src}" role="button" tabindex="0" aria-label="${label}">
+                    <img src="${src}" alt="${label}" loading="lazy" />
+                    <div class="overlay">🔍</div>
+                </div>
+            `;
+        });
+        grid.innerHTML = html;
+
+        grid.querySelectorAll('.gallery-item').forEach(el => {
+            const src = el.dataset.src;
+            const openLb = () => {
+                const lb = document.getElementById('lightbox');
+                const img = document.getElementById('lbImage');
+                img.src = src;
+                img.alt = 'Ampliação da imagem';
+                lb.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            };
+            el.addEventListener('click', openLb);
+            el.addEventListener('keydown', (e) => { if (e.key === 'Enter') openLb(); });
+        });
+    }
+    
+    
+    
+  
+</script>
+
+</body>
+</html>
+
